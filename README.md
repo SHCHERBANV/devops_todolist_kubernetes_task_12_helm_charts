@@ -74,3 +74,9 @@ Create a kubernetes manifest for a pod which will containa ToDo app container:
 11. Run command `kubectl get all,cm,secret,ing -A` and put the output in a file called `output.log` in a root of the repository
 12. `README.md` should have instructuions on how to validate the changes
 13. Create PR with your changes and attach it for validation on a platform.
+
+14. Run the bootstrap script to spin up the Kubernetes cluster, taint the MySQL node, create Helm charts, and deploy them:
+```
+chmod +x bootstrap.sh
+./bootstrap.sh
+```
